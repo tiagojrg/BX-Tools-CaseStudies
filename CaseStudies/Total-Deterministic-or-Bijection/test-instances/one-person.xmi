@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<BijectionWorldLanguage:World
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:BijectionWorldLanguage="http://www.moflon.org.BijectionWorldLanguage"
-    xsi:schemaLocation="http://www.moflon.org.BijectionWorldLanguage ../../BijectionWorldLanguage/model/BijectionWorldLanguage.ecore">
-  <person/>
-</BijectionWorldLanguage:World>
