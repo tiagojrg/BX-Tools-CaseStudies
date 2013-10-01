@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uniNDTotalMMBLanguage:RootB
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:uniNDTotalMMBLanguage="http://www.moflon.org.uniNDTotalMMBLanguage"
+    xsi:schemaLocation="http://www.moflon.org.uniNDTotalMMBLanguage ../../../uniNDTotalMMBLanguage/model/uniNDTotalMMBLanguage.ecore">
+  <b/>
+</uniNDTotalMMBLanguage:RootB>
