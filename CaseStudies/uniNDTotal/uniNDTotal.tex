@@ -275,6 +275,15 @@ T3 - \nameref{sec:oneA} / \nameref{sec:oneBatt15} ($\overrightarrow{R}$)
 ~\\
 
 \textbf{Consistency Relation}
+\begin{lstlisting}[language=QVT]
+transformation a2b (as : A, bs : B) {
+  top relation R2R { 
+    domain as ra:RootA {};
+    domain bs rb:RootB {};
+    where { ra.as->size() = rb.bs->size(); }
+  }
+}
+\end{lstlisting}
 
 
 \subsubsection{Instances transformation results}
