@@ -4,6 +4,8 @@
 \usepackage{subfigure}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{listings}
+\usepackage{qvt}
 
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}}%
@@ -281,55 +283,101 @@ T5 - \nameref{sec:no-persons} / \nameref{sec:no-employees} ($\overrightarrow{R}$
 \pagebreak
 \subsection{\textit{Echo}}
 \subsubsection{Specification implementation}
-\textit{Specification environment}:
+\textit{Specification environment}: Eclipse Modeling Tools
 ~\\
 
 \textbf{Metamodels}
 ~\\
 
 \textbf{Consistency Relation}
+\begin{lstlisting}[language=QVT]
+transformation a2b (as : A, bs : B) {
+  top relation R2R { 
+    domain as ra:RootA {};
+    domain bs rb:RootB {};
+    where { ra.as->size() = rb.bs->size(); }
+  }
+}
+\end{lstlisting}
 
 
 \subsubsection{Instances transformation results}
-\textit{Integration environment}:
+\textit{Integration environment}: Eclipse Modeling Tools
 ~\\
 
 T1 - \nameref{sec:one-person} / \nameref{sec:two-employees} ($\overrightarrow{R}$)
-
+\begin{figure}[ht]
+    \centering
+    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{graphics/bij-one-person.png}}\quad\qquad
+          \subfigure[$n$]{\includegraphics[scale=0.45]{graphics/bij-one-employee.png}}
+          }
+    \caption{T1 result}
+    \label{fig:T1}
+\end{figure}
 ~\\
 
 T2 - \nameref{sec:one-person} / \nameref{sec:two-employees} ($\overleftarrow{R}$)
+\begin{figure}[ht]
+    \centering
+    \mbox{\subfigure[$m$]{\includegraphics[scale=0.45]{graphics/bij-two-persons.png}}\quad\qquad\quad
+          \subfigure[$n$]{\includegraphics[scale=0.45]{graphics/bij-two-employees.png}}
+          }
+    \caption{T2 result}
+    \label{fig:T2}
+\end{figure}
 
 ~\\
 
 T3 - \nameref{sec:two-persons} / \nameref{sec:two-employees} ($\overrightarrow{R}$)
+\begin{figure}[ht]
+    \centering
+    \mbox{\subfigure[$m$]{\includegraphics[scale=0.45]{graphics/bij-two-persons.png}}\quad\qquad\quad
+          \subfigure[$n$]{\includegraphics[scale=0.45]{graphics/bij-two-employees.png}}
+          }
+    \caption{T3 result}
+    \label{fig:T3}
+\end{figure}
 
 ~\\
 
 T4 - \nameref{sec:one-person} / \nameref{sec:no-employees} ($\overrightarrow{R}$)
-
+\begin{figure}[ht]
+    \centering
+    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{graphics/bij-one-person.png}}\quad\qquad
+          \subfigure[$n$]{\includegraphics[scale=0.45]{graphics/bij-one-employee.png}}
+          }
+    \caption{T4 result}
+    \label{fig:T4}
+\end{figure}
 ~\\
 
 T5 - \nameref{sec:no-persons} / \nameref{sec:no-employees} ($\overrightarrow{R}$)
-
+\begin{figure}[ht]
+    \centering
+    \mbox{\subfigure[$m$]{\includegraphics[scale=0.15]{graphics/bij-empty.png}}\quad\qquad\quad
+          \subfigure[$n$]{\includegraphics[scale=0.15]{graphics/bij-empty.png}}
+          }
+    \caption{T5 result}
+    \label{fig:T5}
+\end{figure}
 \subsubsection{Assessment}
 
 \begin{center}
 \begin{tabular}{| r | c |}
   \hline                        
-  correct & \\
+  correct & \cmark\\
   \hline
-  hippocratic & \\
+  hippocratic & \cmark\\
   \hline 
-  undoable & \\
+  undoable & \cmark\\
   \hline 
-  history-ignorant & \\
+  history-ignorant & \cmark\\
   \hline 
-  simply-matching & \\
+  simply-matching & \cmark\\
   \hline 
-  matching & \\
+  matching & \cmark\\
   \hline 
-  least-change & \\
+  least-change & \cmark\\
   \hline   
 \end{tabular}
 \end{center}
