@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Motivation}{2}{0}{1}
+\beamer@sectionintoc {2}{Approach}{3}{0}{2}
+\beamer@sectionintoc {3}{Tools to assess}{4}{0}{3}
+\beamer@sectionintoc {4}{Case Studies}{5}{0}{4}
+\beamer@subsectionintoc {4}{1}{Bijection}{5}{0}{4}
+\beamer@subsectionintoc {4}{2}{uniNDTotal}{10}{0}{4}
+\beamer@sectionintoc {5}{References}{15}{0}{5}
