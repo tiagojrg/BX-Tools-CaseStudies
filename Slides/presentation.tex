@@ -81,6 +81,8 @@
 \usepackage{qvt}
 
 
+\usepackage{mdframed}
+
 
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}}%
@@ -187,7 +189,7 @@ assessment driven by \textbf{case studies}\\
 
 \item \textit{\textbf{echo}} \cite{echotool}
 
-\item \textit{\underline{GRoundTram}} \cite{GRoundTram}
+\item \textit{GRoundTram} \cite{GRoundTram}
  
 \item \textit{ModelMorf} \cite{ModelMorf}
 
@@ -197,20 +199,20 @@ assessment driven by \textbf{case studies}\\
 \end{itemize}
 \textit{Properties}
 \begin{itemize}
-\item \textit{\textbf{correct}} \quad {\scriptsize $\forall m \in M \enskip \forall n \in N \qquad R(m,\overrightarrow{R}(m,n)) \enskip \land \enskip R(\overleftarrow{R}(m,n),n)$ }
+\item \textit{\textbf{correct}} \cite{Perdita1}\quad {\tiny $\forall m \in M \enskip \forall n \in N \qquad R(m,\overrightarrow{R}(m,n)) \enskip \land \enskip R(\overleftarrow{R}(m,n),n)$ }
 
-\item \textit{\textbf{hippocratic}} \enskip {\scriptsize
+\item \textit{\textbf{hippocratic}} \cite{Perdita1} \enskip {\tiny
 $\forall m \in M \enskip \forall n \in N \quad R(m,n) \implies \overrightarrow{R}(m,n)=n \enskip \land \enskip \overleftarrow{R}(m,n)=m$ }
 
-\item \textit{least-change}
+\item \textit{undoable} \cite{Perdita2}
 
-\item \textit{undoable}
+\item \textit{history-ignorant} \cite{Perdita2}
 
-\item \textit{history-ignorant}
+\item \textit{simply-matching} \cite{Perdita2}
 
-\item \textit{simply-matching}
+\item \textit{matching} \cite{Perdita2}
 
-\item \textit{matching}
+\item \textit{least-change} \cite{echo}
 \end{itemize}
 \end{footnotesize}
 
@@ -244,7 +246,7 @@ $\forall m \in M \enskip \forall n \in N \quad R(m,n) \implies \overrightarrow{R
 \begin{frame}
 \frametitle{Bijection - \textbf{Consistency Relation}}
 
-\textbf{Type:} \textit{TD} (Bijection)\\
+\textbf{Type:} Bijection (Total Deterministic (\textit{TD})) -  $one <> one$\\
 
 For every $M$ instance there
 exists exactly one $N$ instance such that both are related by $R$ (and vice versa).
@@ -329,10 +331,12 @@ exists \textbf{exactly one} \textit{B} in \textit{RootB} (and vice versa).
 \frametitle{Bijection - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T1 - \nameref{sec:one-person} / \nameref{sec:two-employees} 
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
+    \[ \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.42]{printscreens/inst-twoBs.png}}
-          }
+          } \]
+\end{mdframed}
     \label{fig:T1}
 \end{figure}
 
@@ -342,11 +346,13 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.4]{printscreens/inst-oneB.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}
+          \subfigure[$n'$]{\includegraphics[scale=0.4]{printscreens/inst-oneB.png}}
           }
     \label{fig:T1}
 \end{figure}
+
 
 \end{frame}
 
@@ -354,10 +360,12 @@ $\overrightarrow{R}$
 \frametitle{Bijection - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T2 - \nameref{sec:one-person} / \nameref{sec:two-employees} 
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.42]{printscreens/inst-twoBs.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -367,8 +375,8 @@ $\overleftarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.4]{printscreens/inst-twoAs.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.4]{printscreens/inst-twoBs.png}}
+    \mbox{\subfigure[$m'$]{\includegraphics[scale=0.4]{printscreens/inst-twoAs.png}}
+%          \subfigure[$n$]{\includegraphics[scale=0.4]{printscreens/inst-twoBs.png}}
           }
     \label{fig:T2}
 \end{figure}
@@ -379,10 +387,12 @@ $\overleftarrow{R}$
 \frametitle{Bijection - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T3 - \nameref{sec:two-persons} / \nameref{sec:two-employees}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.4]{printscreens/inst-twoAs.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.4]{printscreens/inst-twoBs.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -392,8 +402,9 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.4]{printscreens/inst-twoAs.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.4]{printscreens/inst-twoBs.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.4]{printscreens/inst-twoAs.png}}
+	\subfigure[$n'$]{\includegraphics[scale=0.4]{printscreens/inst-twoBs.png}}
           }
     \label{fig:T3}
 \end{figure}
@@ -404,10 +415,12 @@ $\overrightarrow{R}$
 \frametitle{Bijection - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T4 - \nameref{sec:one-person} / \nameref{sec:no-employees}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.4]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -417,8 +430,9 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.4]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.43]{printscreens/inst-oneB.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.4]{printscreens/inst-oneA.png}}
+   \subfigure[$n'$]{\includegraphics[scale=0.43]{printscreens/inst-oneB.png}}
           }
     \label{fig:T4}
 \end{figure}
@@ -429,10 +443,12 @@ $\overrightarrow{R}$
 \frametitle{Bijection - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T5 - \nameref{sec:no-persons} / \nameref{sec:no-employees}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 ~\\
@@ -443,8 +459,9 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}
+   \subfigure[$n'$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}
           }
     \label{fig:T5}
 \end{figure}
@@ -456,6 +473,8 @@ $\overrightarrow{R}$
 
 \begin{frame}
 \frametitle{Bijection - \textbf{Assessment} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
+
+For \textbf{the previous test instances in particular} the tool was:
 
 \begin{center}
 \begin{tabular}{| r | c |}
@@ -516,7 +535,7 @@ transformation a2b (as : A, bs : B) {
   top relation R2R { 
     domain as ra:RootA {};
     domain bs rb:RootB {};
-    where { ra.as->size() = rb.bs->size(); } // not standard QVT
+    where { ra.as->size() = rb.bs->size(); } // not suitable QVT
   }
 }
 \end{lstlisting}
@@ -528,7 +547,7 @@ transformation a2b (as : A, bs : B) {
 \frametitle{Bijection - \textbf{Transformations} - \textbf{\textit{\textcolor{green}{echo}}}}
 
 \begin{center}
-\textit{same results}
+\textit{same results as with eMoflon}
 \end{center}
 
 \end{frame}
@@ -536,6 +555,8 @@ transformation a2b (as : A, bs : B) {
 
 \begin{frame}
 \frametitle{Bijection - \textbf{Assessment} - \textbf{\textit{\textcolor{green}{echo}}}}
+
+For \textbf{the previous test instances in particular} the tool was:
 
 \begin{center}
 \begin{tabular}{| r | c |}
@@ -596,7 +617,7 @@ transformation a2b (as : A, bs : B) {
 \begin{frame}
 \frametitle{uniNDTotal - \textbf{Consistency Relation}}
 
-\textbf{Type:} \textit{uniNDTotal},  $one <> some$\\
+\textbf{Type:} \textit{Non Deterministic (only unidirectionally) Total (uniNDTotal)} - $one <> some$\\
 
 ~\\
 For every $M$ instance there
@@ -687,10 +708,12 @@ exists \textbf{exactly one} \textit{A} in \textit{RootA}.
 \frametitle{uniNDTotal - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T1 - \nameref{sec:oneA} / \nameref{sec:oneBatt0}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -700,8 +723,9 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}
+    \subfigure[$n'$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
           }
     \label{fig:T1}
 \end{figure}
@@ -713,10 +737,12 @@ $\overrightarrow{R}$
 \frametitle{uniNDTotal - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T2 - \nameref{sec:noAs} / \nameref{sec:oneBatt15}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -726,8 +752,8 @@ $\overleftarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
+    \mbox{\subfigure[$m'$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}
+%          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
           }
     \label{fig:T2}
 \end{figure}
@@ -738,10 +764,12 @@ $\overleftarrow{R}$
 \frametitle{uniNDTotal - \textbf{Transformations} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
 %T3 - \nameref{sec:oneA} / \nameref{sec:oneBatt15}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -751,8 +779,9 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}
+	\subfigure[$n'$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
           }
     \label{fig:T3}
 \end{figure}
@@ -763,6 +792,8 @@ $\overrightarrow{R}$
 
 \begin{frame}
 \frametitle{uniNDTotal - \textbf{Assessment} - \textbf{\textit{\textcolor{orange}{eMoflon}}}}
+
+For \textbf{the previous test instances in particular} the tool was:
 
 \begin{center}
 \begin{tabular}{| r | c |}
@@ -842,10 +873,12 @@ transformation a2b (as : A, bs : B) {
 \frametitle{uniNDTotal - \textbf{Transformations} - \textbf{\textit{\textcolor{green}{echo}}}}
 %T1 - \nameref{sec:oneA} / \nameref{sec:oneBatt0}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -855,8 +888,9 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}
+	\subfigure[$n'$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt0.png}}
           }
     \label{fig:T1}
 \end{figure}
@@ -868,10 +902,12 @@ $\overrightarrow{R}$
 \frametitle{uniNDTotal - \textbf{Transformations} - \textbf{\textit{\textcolor{green}{echo}}}}
 %T2 - \nameref{sec:noAs} / \nameref{sec:oneBatt15}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.15]{printscreens/bij-empty.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -881,8 +917,8 @@ $\overleftarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
+    \mbox{\subfigure[$m'$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}
+%          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
           }
     \label{fig:T2}
 \end{figure}
@@ -893,10 +929,12 @@ $\overleftarrow{R}$
 \frametitle{uniNDTotal - \textbf{Transformations} - \textbf{\textit{\textcolor{green}{echo}}}}
 %T3 - \nameref{sec:oneA} / \nameref{sec:oneBatt15}
 \begin{figure}[ht]
+\begin{mdframed}
     \centering
     \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
           \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
           }
+\end{mdframed}          
     \label{fig:T1}
 \end{figure}
 
@@ -906,8 +944,9 @@ $\overrightarrow{R}$
 
 \begin{figure}[ht]
     \centering
-    \mbox{\subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}\qquad\qquad\qquad
-          \subfigure[$n$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
+    \mbox{
+%    \subfigure[$m$]{\includegraphics[scale=0.35]{printscreens/inst-oneA.png}}
+	\subfigure[$n'$]{\includegraphics[scale=0.5]{printscreens/inst-oneBatt15.png}}
           }
     \label{fig:T3}
 \end{figure}
@@ -917,6 +956,8 @@ $\overrightarrow{R}$
 
 \begin{frame}
 \frametitle{uniNDTotal - \textbf{Assessment} - \textbf{\textit{\textcolor{green}{echo}}}}
+
+For \textbf{the previous test instances in particular} the tool was:
 
 \begin{center}
 \begin{tabular}{| r | c |}
@@ -957,7 +998,9 @@ $\overrightarrow{R}$
 
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
 
-\bibitem{Perdita}Stevens, Perdita. "Observations relating to the equivalences induced on model sets by bidirectional transformations." Electronic Communications of the EASST 49 (2012).
+\bibitem{Perdita1} Stevens, Perdita. "Bidirectional model transformations in QVT: Semantic issues and open questions." Model Driven Engineering Languages and Systems. Springer Berlin Heidelberg, 2007. 1-15.
+
+\bibitem{Perdita2} Stevens, Perdita. "Observations relating to the equivalences induced on model sets by bidirectional transformations." Electronic Communications of the EASST 49 (2012).
 
 \bibitem{echo} Macedo, Nuno, and Alcino Cunha. "Implementing QVT-R bidirectional model transformations using Alloy." Fundamental Approaches to Software Engineering. Springer Berlin Heidelberg, 2013. 297-311.
 
