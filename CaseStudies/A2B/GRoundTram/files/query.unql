@@ -1,0 +1,2 @@
+select {B : {}}
+  where {A : {}} in $db
