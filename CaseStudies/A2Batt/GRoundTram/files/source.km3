@@ -1,0 +1,7 @@
+package N {
+  datatype Int;
+
+  class B {
+    attribute att: Int;
+  }
+}
