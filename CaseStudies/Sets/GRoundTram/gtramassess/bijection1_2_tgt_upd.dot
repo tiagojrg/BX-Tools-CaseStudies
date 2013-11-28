@@ -1,0 +1,28 @@
+digraph "g" {
+	graph [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+	]
+	node [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		shape = "ellipse"
+		style = "solid"
+	]
+	edge [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		style = "solid"
+	]
+	"0" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "{&}\n\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+}
