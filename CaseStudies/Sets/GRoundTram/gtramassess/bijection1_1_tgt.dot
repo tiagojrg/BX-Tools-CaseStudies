@@ -1,0 +1,8 @@
+digraph "g" {
+    node [ shape = "ellipse" ]
+    "0" [ label = "{&}\n\N"
+          style = "dotted"
+          fontsize = "10"
+          width = "0.3"
+          height = "0.25" ]
+}
