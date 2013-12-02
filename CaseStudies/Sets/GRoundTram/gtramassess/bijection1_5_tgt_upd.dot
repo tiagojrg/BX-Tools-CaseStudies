@@ -17,7 +17,71 @@ digraph "g" {
 		fontcolor = "black"
 		style = "solid"
 	]
-	"n0" [
+	"8" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"7" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"6" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"5" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"4" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"3" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"2" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"1" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"0" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
@@ -25,64 +89,60 @@ digraph "g" {
 		shape = "ellipse"
 		style = "solid"
 	]
-	"n2" [
+	"7" -> "8" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
+		label = "\"B\""
 		style = "solid"
 	]
-	"n3" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
-		style = "solid"
-	]
-	"n4" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
-		style = "solid"
-	]
-	"n5" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
-		style = "solid"
-	]
-	"n2" -> "n3" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "name"
-		style = "solid"
-	]
-	"n3" -> "n4" [
+	"6" -> "7" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
 		label = "String"
 		style = "solid"
 	]
-	"n4" -> "n5" [
+	"5" -> "6" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
-		label = "\"A\""
+		label = "name"
 		style = "solid"
 	]
-	"n0" -> "n2" [
+	"3" -> "4" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
-		label = "Person"
+		label = "\"B\""
+		style = "solid"
+	]
+	"2" -> "3" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "String"
+		style = "solid"
+	]
+	"1" -> "2" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "name"
+		style = "solid"
+	]
+	"0" -> "5" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "Employee"
+		style = "solid"
+	]
+	"0" -> "1" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "Employee"
 		style = "solid"
 	]
 }

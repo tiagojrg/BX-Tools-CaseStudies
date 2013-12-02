@@ -17,38 +17,6 @@ digraph "g" {
 		fontcolor = "black"
 		style = "solid"
 	]
-	"8" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
-		style = "solid"
-	]
-	"7" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
-		style = "solid"
-	]
-	"6" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
-		style = "solid"
-	]
-	"5" [
-		fontsize = "14"
-		fontname = "Times-Roman"
-		fontcolor = "black"
-		label = "\N"
-		shape = "ellipse"
-		style = "solid"
-	]
 	"4" [
 		fontsize = "14"
 		fontname = "Times-Roman"
@@ -89,25 +57,36 @@ digraph "g" {
 		shape = "ellipse"
 		style = "solid"
 	]
-	"7" -> "8" [
+	"n6" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
-		label = "\"B\""
+		label = "\N"
+		shape = "ellipse"
 		style = "solid"
 	]
-	"6" -> "7" [
+	"n7" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
-		label = "String"
+		label = "\N"
+		shape = "ellipse"
 		style = "solid"
 	]
-	"5" -> "6" [
+	"n8" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
-		label = "name"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"n9" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
 		style = "solid"
 	]
 	"3" -> "4" [
@@ -131,14 +110,35 @@ digraph "g" {
 		label = "name"
 		style = "solid"
 	]
-	"0" -> "5" [
+	"0" -> "1" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
 		label = "Employee"
 		style = "solid"
 	]
-	"0" -> "1" [
+	"n8" -> "n9" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\"B\""
+		style = "solid"
+	]
+	"n7" -> "n8" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "String"
+		style = "solid"
+	]
+	"n6" -> "n7" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "name"
+		style = "solid"
+	]
+	"0" -> "n6" [
 		fontsize = "14"
 		fontname = "Times-Roman"
 		fontcolor = "black"
