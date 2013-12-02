@@ -1,0 +1,12 @@
+import M : 'M.ecore' :: M;
+import N : 'N.ecore' :: N;
+
+transformation m2n (m : M, n : N) {
+
+	top relation M2N { 
+		n : String;
+    	domain m p:Person { name = n };
+    	domain n e:Employee { name = n };
+  	}
+
+}
