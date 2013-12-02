@@ -1,0 +1,88 @@
+digraph "g" {
+	graph [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+	]
+	node [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		shape = "ellipse"
+		style = "solid"
+	]
+	edge [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		style = "solid"
+	]
+	"4" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"3" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"2" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"1" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"0" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "{&}\n\N"
+		shape = "ellipse"
+		style = "solid"
+	]
+	"3" -> "4" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "\"B\""
+		style = "solid"
+	]
+	"2" -> "3" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "String"
+		style = "solid"
+	]
+	"1" -> "2" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "name"
+		style = "solid"
+	]
+	"0" -> "1" [
+		fontsize = "14"
+		fontname = "Times-Roman"
+		fontcolor = "black"
+		label = "Employee"
+		style = "solid"
+	]
+}

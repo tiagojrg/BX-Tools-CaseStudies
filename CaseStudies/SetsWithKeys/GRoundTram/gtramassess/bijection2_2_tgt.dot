@@ -1,0 +1,12 @@
+digraph "g" {
+    node [ shape = "ellipse" ]
+    "4" [ label = "\N" ]
+    "3" [ label = "\N" ]
+    "2" [ label = "\N" ]
+    "1" [ label = "\N" ]
+    "0" [ label = "{&}\n\N" ]
+    "3" -> "4" [ label = "\"A\"" ]
+    "2" -> "3" [ label = "String" ]
+    "1" -> "2" [ label = "name" ]
+    "0" -> "1" [ label = "Employee" ]
+}

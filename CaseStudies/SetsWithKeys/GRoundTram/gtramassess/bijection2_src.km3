@@ -1,0 +1,7 @@
+package Person { 
+  datatype String; 
+  class Person { 
+    attribute name  : String; 
+  } 
+}
+

@@ -1,0 +1,12 @@
+digraph "g" {
+    node [ shape = "ellipse" ]
+    "n5" [ label = "\N" ]
+    "n4" [ label = "\N" ]
+    "n3" [ label = "\N" ]
+    "n2" [ label = "\N" ]
+    "n0" [ label = "{&}\n\N" ]
+    "n4" -> "n5" [ label = "\"B\"" ]
+    "n3" -> "n4" [ label = "String" ]
+    "n2" -> "n3" [ label = "name" ]
+    "n0" -> "n2" [ label = "Person" ]
+}
